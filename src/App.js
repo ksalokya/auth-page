@@ -1,19 +1,31 @@
 import * as React from 'react';
 import './App.css';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom";
+
 import Signup from './signup/Signup';
+import Signin from './signin/Signin';
 
 function App() {
   return (
     <div className='main'>
-      <React.Fragment>
-        <CssBaseline />
-        <Container maxWidth="lg" className='box'>
-          <Signup />
-        </Container>
-      </React.Fragment>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/">
+            <Route index element={<Navigate to="/signup" />} />
+              <Route path="signup">
+                <Route index element={<Signup />} />
+              </Route>
+              <Route path="signin">
+                <Route index element={<Signin />} />
+              </Route>
+            </Route>
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }

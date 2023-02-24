@@ -10,8 +10,7 @@ import Typography from '@mui/material/Typography';
 import * as animationData from "./animation.json"
 import { Link } from "react-router-dom";
 
-
-export default function Signup() {
+export default function Signin() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -27,34 +26,22 @@ export default function Signup() {
             <Container maxWidth="lg" className='box'>
                 <Box sx={{ bgcolor: '#ffffff', height: '85vh', opacity: 0.8 }}>
                     <Grid container>
-                        <Grid item xs={6} sx={{ padding: 4, marginTop: 2}}>
+                        <Grid item xs={6} sx={{ marginTop: 2 }}>
                             <Lottie
                                 options={defaultOptions}
                                 isClickToPauseDisabled={true}
                             />
                         </Grid>
-                        <Grid item xs={6} sx={{ padding: 4,marginTop: 1 }}>
+                        <Grid item xs={6} sx={{ padding: 4, marginTop: 2 }}>
                             <div className='top-box'>
-                                <h2>Get Started!</h2>
+                                <h2>Hello Again!</h2>
                                 <Typography>
-                                    Already have an account?{" "}
-                                    <Link to="/signin">Sign In</Link>
+                                    Don't have an account?{" "}
+                                    <Link to="/signup">Sign Up</Link>
                                 </Typography>
                             </div>
                             <form />
-                            <Grid container spacing={2} sx={{marginTop: 2}}>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        style={{ color: "#ffffff" }}
-                                        variant="outlined"
-                                        required={true}
-                                        fullWidth
-                                        id="username"
-                                        label="Username"
-                                        name="username"
-                                        autoComplete="off"
-                                    />
-                                </Grid>
+                            <Grid container spacing={4} sx={{ marginTop: 7 }}>
                                 <Grid item xs={12}>
                                     <TextField
                                         style={{ color: "#ffffff" }}
@@ -79,24 +66,10 @@ export default function Signup() {
                                         autoComplete="off"
                                     />
                                 </Grid>
-                                <Grid item xs={12}>
-                                    <TextField
-                                        variant="outlined"
-                                        required={true}
-                                        fullWidth
-                                        name="passwordConfirmation"
-                                        label="Password Confirmation"
-                                        type="password"
-                                        id="password-confirmation"
-                                        autoComplete="off"
-                                    />
-                                </Grid>
                             </Grid>
                             <div class="agreement">
-                                <input type="checkbox" />
-                                <span>I agree to Plataform's &nbsp;
-                                    <a href="#">Terms of Service</a> and&nbsp;
-                                    <a href="#">Privacy Policy.</a>
+                                <span>Forgot Password? &nbsp;
+                                    <a href="#">RESET</a>
                                 </span>
                             </div>
                             <Button
@@ -106,7 +79,7 @@ export default function Signup() {
                                 color="primary"
                                 className='register-btn'
                             >
-                                Sign Up
+                                Sign In
                             </Button>
                         </Grid>
                     </Grid>

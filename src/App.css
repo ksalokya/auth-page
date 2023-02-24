@@ -1,16 +1,65 @@
-.main{
+.main {
   background-image: url("./assets/bg-image.jpg");
   background-position: center;
-	background-size: cover;
-	position: relative;
+  background-size: cover;
+  position: relative;
   height: 100vh;
-	width: 100%;
+  width: 100%;
 }
 
-.box{
+.box {
   position: absolute;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.top-box a {
+  color: #E98265;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.top-box a:hover {
+  color: #c1593c;
+}
+
+.top-box h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.top-box p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #323537;
+}
+
+.agreement {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.agreement span {
+  color: #88898a;
+}
+
+.agreement a {
+  color: #E98265;
+}
+
+.register-btn {
+  transition: all 0.4s ease !important;
+  background-color: #E98265 !important;
+  cursor: pointer;
+  border-radius: 0.8rem !important;
+  top: 5%;
+}
+
+.register-btn:hover {
+  background-color: #f39d85 !important;
 }

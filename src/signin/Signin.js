@@ -24,7 +24,7 @@ export default function Signin() {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="lg" className='box'>
-                <Box sx={{ bgcolor: '#ffffff', height: '85vh', opacity: 0.8 }}>
+                <Box sx={{ bgcolor: '#ffffff', opacity: 0.8 }}>
                     <Grid container>
                         <Grid item xs={6} sx={{ marginTop: 2 }}>
                             <Lottie
